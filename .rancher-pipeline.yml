@@ -1,0 +1,11 @@
+stages:
+- name: aaa
+  steps:
+  - publishImageConfig:
+      dockerfilePath: ./Dockerfile
+      buildContext: .
+      tag: dada
+      pushRemote: true
+      registry: 127.0.0.1:34252
+timeout: 60
+notification: {}
